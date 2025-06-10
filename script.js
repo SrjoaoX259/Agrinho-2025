@@ -10,31 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Adiciona a classe para animação de entrada
                 entry.target.classList.add('is-visible');
 
-                // Lógica específica para o texto dentro dos vídeos
                 const videoTextElement = entry.target.querySelector('.texto-central.video-texto');
                 if (videoTextElement) {
                     videoTextElement.classList.add('is-visible');
                 }
 
-                // Lógica específica para o vídeo
                 const videoElement = entry.target.querySelector('.video-extra');
                 if (videoElement) {
                     videoElement.classList.add('is-visible');
                 }
             } else {
-                // Remove a classe para animação de saída
                 entry.target.classList.remove('is-visible');
 
-                // Lógica específica para o texto dentro dos vídeos
                 const videoTextElement = entry.target.querySelector('.texto-central.video-texto');
                 if (videoTextElement) {
                     videoTextElement.classList.remove('is-visible');
                 }
 
-                // Lógica específica para o vídeo
                 const videoElement = entry.target.querySelector('.video-extra');
                 if (videoElement) {
                     videoElement.classList.remove('is-visible');
@@ -68,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.y = y;
             this.radius = 0;
             this.maxRadius = 20;
-            this.alpha = 1; 
+            this.alpha = 1;
             this.growthRate = 2;
             this.fadeRate = 0.02;
         }

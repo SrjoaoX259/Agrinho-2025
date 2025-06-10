@@ -26,11 +26,11 @@ a {
 }
 
 h1, h2, h3, p, li, a {
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.2s ease-in-out;
 }
 
 h1:hover, h2:hover, h3:hover, p:hover, li:hover, a:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 h1:active, h2:active, h3:active, p:active, li:active, a:active {
@@ -219,7 +219,7 @@ section p {
 .video-texto p {
     opacity: 0;
     transform: translateX(-100px);
-    transition: opacity 1s ease-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    transition: opacity 1s ease-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .video-texto.is-visible h2,
@@ -258,7 +258,6 @@ section p {
     margin-bottom: 30px;
 }
 
-/* Estilos para a nova seção de conclusão com animação */
 #conclusao {
     opacity: 0;
     transform: translateY(50px);
