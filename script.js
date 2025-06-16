@@ -11,24 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-
                 const videoTextElement = entry.target.querySelector('.texto-central.video-texto');
                 if (videoTextElement) {
                     videoTextElement.classList.add('is-visible');
                 }
-
                 const videoElement = entry.target.querySelector('.video-extra');
                 if (videoElement) {
                     videoElement.classList.add('is-visible');
                 }
             } else {
                 entry.target.classList.remove('is-visible');
-
                 const videoTextElement = entry.target.querySelector('.texto-central.video-texto');
                 if (videoTextElement) {
                     videoTextElement.classList.remove('is-visible');
                 }
-
                 const videoElement = entry.target.querySelector('.video-extra');
                 if (videoElement) {
                     videoElement.classList.remove('is-visible');
@@ -81,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
         update() {
             this.radius += this.growthRate;
             this.alpha -= this.fadeRate;
-
             if (this.alpha < 0) this.alpha = 0;
         }
     }
@@ -97,9 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function animateCircles() {
         requestAnimationFrame(animateCircles);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
         circles = circles.filter(circle => circle.alpha > 0);
-
         for (let i = 0; i < circles.length; i++) {
             circles[i].update();
             circles[i].draw();
@@ -107,4 +100,79 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     animateCircles();
+
+    const body = document.body;
+    const root = document.documentElement;
+
+    const toggleContrastButton = document.getElementById('toggle-contrast');
+    if (toggleContrastButton) {
+        toggleContrastButton.addEventListener('click', () => {
+            body.classList.toggle('high-contrast');
+            localStorage.setItem('high-contrast', body.classList.contains('high-contrast'));
+        });
+        if (localStorage.getItem('high-contrast') === 'true') {
+            body.classList.add('high-contrast');
+        }
+    }
+
+    const aumentarFonteButton = document.getElementById('aumentar-fonte');
+    const diminuirFonteButton = document.getElementById('diminuir-fonte');
+    const resetarFonteButton = document.getElementById('resetar-fonte');
+
+    let currentFontSizeMultiplier = parseFloat(localStorage.getItem('fontSizeMultiplier')) || 1;
+    root.style.setProperty('--multiplicador-fonte', currentFontSizeMultiplier);
+
+    function updateFontSize() {
+        root.style.setProperty('--multiplicador-fonte', currentFontSizeMultiplier);
+        localStorage.setItem('fontSizeMultiplier', currentFontSizeMultiplier);
+        if (currentFontSizeMultiplier > 1) {
+            body.classList.add('font-increased');
+        } else {
+            body.classList.remove('font-increased');
+        }
+    }
+
+    if (aumentarFonteButton) {
+        aumentarFonteButton.addEventListener('click', () => {
+            if (currentFontSizeMultiplier < 1.5) {
+                currentFontSizeMultiplier += 0.1;
+                updateFontSize();
+            }
+        });
+    }
+
+    if (diminuirFonteButton) {
+        diminuirFonteButton.addEventListener('click', () => {
+            if (currentFontSizeMultiplier > 0.8) {
+                currentFontSizeMultiplier -= 0.1;
+                updateFontSize();
+            }
+        });
+    }
+
+    if (resetarFonteButton) {
+        resetarFonteButton.addEventListener('click', () => {
+            currentFontSizeMultiplier = 1;
+            updateFontSize();
+        });
+    }
+
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mainNav = document.getElementById('mainNav');
+
+    if (hamburgerButton && mainNav) {
+        hamburgerButton.addEventListener('click', () => {
+            hamburgerButton.classList.toggle('open');
+            mainNav.classList.toggle('active');
+        });
+
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    hamburgerButton.classList.remove('open');
+                    mainNav.classList.remove('active');
+                }
+            });
+        });
+    }
 });
