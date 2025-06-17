@@ -86,3 +86,8 @@ O site é dividido em seções temáticas:
 -   **Participação:** Projeto individual
     
 -   **Ferramentas usadas:** Inteligência Artificial para conteúdo, imagens e vídeos.
+
+
+## 🌐 Acesse o Projeto
+
+[Clique aqui para visualizar o site](https://srjoaox259.github.io/Agrinho-2025/ "https://srjoaox259.github.io/Agrinho-2025/")
