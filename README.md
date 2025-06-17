@@ -1,21 +1,22 @@
-# Agrinho-2025
-# Descrição
-Este projeto foi desenvolvido como parte do Programa Agrinho 2025. O objetivo central é destacar a importância da conexão entre o campo e a cidade, mostrando como esses dois mundos se complementam e colaboram para um futuro sustentável e equilibrado.
+# Agrinho-2025 - ⛺ Conexão entre Campo e Cidade 🌇
+**"Unindo saberes, culturas e o futuro."**
+# 📋 Descrição
+Este projeto foi desenvolvido como parte do Programa Agrinho 2025. Com objetivo central em destacar a importância da conexão entre o campo e a cidade, mostrando como esses dois mundos se complementam e colaboram para um futuro sustentável e equilibrado para nossa sociedade.
 
-# Qual o objetivo desse projeto??
-Foi criado com o objetivo de apresentar e conexão entre o campo e a cidade, e o quão importante as duas são para ambas, e a nossa necessidade dessas duas áreas.
+# 📚 Qual a finalidade desse projeto??
+Foi criado com o intuito de apresentar e conexão entre o campo e a cidade, o quão importante os dois são para ambos, e a nossa necessidade dessas duas áreas.
 
-# Público-alvo
+# 👨‍👩‍👧‍👦 Público-alvo
 O conteúdo foi idealizado para todos os públicos, com linguagem simples, visual envolvente e acessibilidade ampla.
 
-#  Tecnologias utilizadas
+#  📱 Tecnologias utilizadas
 - HTML5
 - CSS3
 - JavaScript (DOM e Canvas)
 - Google Fonts
 - GitHub Pages (hospedagem)
 
-# Estrutura de pastas
+# 🗂️ Estrutura de pastas
 Agrinho-2025/  
 │  
 ├── index.html  
@@ -39,7 +40,7 @@ Agrinho-2025/
 ```
 > Exibe um vídeo de paisagem cobrindo a tela inteira, criando um impacto visual na entrada do site.
 
-### 2. Animações ao rolar a página (`script.js`)
+### 2.  📄 Animações ao rolar a página (`script.js`)
 ```java
 const sectionsToAnimate = document.querySelectorAll('#video-campo, #video-troca, #conclusao');
 const observer = new IntersectionObserver((entries) => {
@@ -50,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
 ```
 >Destaque visual automático para seções importantes ao entrar no campo de visão.
 
-### 3. Design Responsivo com CSS
+### 3. ⚙️ Design Responsivo com CSS
 ```css
 @media (max-width: 768px) {
   .bloco {
@@ -61,7 +62,7 @@ const observer = new IntersectionObserver((entries) => {
 ````
 >Garante que o site funcione bem em celulares e tablets.
 
-## Estrutura de Conteúdo
+## 🏗️ Estrutura de Conteúdo
 
 O site é dividido em seções temáticas:
 
@@ -90,4 +91,7 @@ O site é dividido em seções temáticas:
 
 ## 🌐 Acesse o Projeto
 
-[Clique aqui para visualizar o site](https://srjoaox259.github.io/Agrinho-2025/ "https://srjoaox259.github.io/Agrinho-2025/")
+📎 [Clique aqui para visualizar o site](https://srjoaox259.github.io/Agrinho-2025/ "https://srjoaox259.github.io/Agrinho-2025/")
+
+
+
