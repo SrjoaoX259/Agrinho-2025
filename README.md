@@ -31,7 +31,7 @@ Agrinho-2025/
 
 ## ✨ Destaques do Código
 
-### 1. 🌄 Vídeo de Fundo na Página Inicial
+### 1. 🌄 Vídeo de Fundo na Página Inicial (`html`)
 
 ```html
 <video autoplay muted loop id="background-video">
@@ -51,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
 ```
 >Destaque visual automático para seções importantes ao entrar no campo de visão.
 
-### 3. ⚙️ Design Responsivo com CSS
+### 3. ⚙️ Design Responsivo com (`CSS`)
 ```css
 @media (max-width: 768px) {
   .bloco {
