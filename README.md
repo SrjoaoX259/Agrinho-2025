@@ -14,6 +14,7 @@ O conteúdo foi idealizado para todos os públicos, com linguagem simples, visua
 - JavaScript (DOM e Canvas)
 - Google Fonts
 - GitHub Pages (hospedagem)
+- Inteligência Articial
 
 # Estrutura de pastas
 Agrinho-2025/  
