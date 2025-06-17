@@ -14,7 +14,6 @@ O conteúdo foi idealizado para todos os públicos, com linguagem simples, visua
 - JavaScript (DOM e Canvas)
 - Google Fonts
 - GitHub Pages (hospedagem)
-- Inteligência Articial
 
 # Estrutura de pastas
 Agrinho-2025/  
@@ -77,3 +76,13 @@ O site é dividido em seções temáticas:
 -   **Importância e conclusão**
     
 -   **Rodapé com créditos**
+
+## 👨‍💻 Autor
+
+-   **Nome:** João Pedro Leme
+    
+-   **Ano Escolar:** 2º Ano do Ensino Médio
+    
+-   **Participação:** Projeto individual
+    
+-   **Ferramentas usadas:** Inteligência Artificial para conteúdo, imagens e vídeos.
